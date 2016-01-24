@@ -1,0 +1,27 @@
+{
+  "name": "jsreport-postgres-store",
+  "version": "0.1.0",
+  "description": "Extension allowing to store template in Postgres SQL database",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsreport/jsreport-postgres-store.git"
+  },
+  "author": "Jan Blaha",
+  "bugs": {
+    "url": "https://github.com/jsreport/jsreport-postgres-store/issues"
+  },
+  "homepage": "https://github.com/jsreport/jsreport-postgres-store#readme",
+  "dependencies": {
+    "jsreport-sql-store": "0.1.1",
+    "pg-promise": "3.0.3",
+    "q": "^1.4.1"
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^4.4.0",
+    "standard": "^5.4.1"
+  }
+}
