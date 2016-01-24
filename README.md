@@ -1,6 +1,6 @@
 #jsreport-postgres-store
 
-**[jsreport](https://github.com/jsreport/jsreport) template store extension allowing to persist data in [postgres](http://www.postgresql.org/) sql database**
+**[jsreport](https://github.com/jsreport/jsreport) template store extension allowing to persist data in [PostgreSQL](http://www.postgresql.org/) database**
 
 
 ##Installation
