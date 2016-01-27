@@ -16,9 +16,9 @@
   },
   "homepage": "https://github.com/jsreport/jsreport-postgres-store#readme",
   "dependencies": {
-    "jsreport-sql-store": "0.1.1",
+    "jsreport-sql-store": "^0.1.1",
     "pg-promise": "3.0.3",
-    "q": "^1.4.1"
+    "q": "1.4.1"
   },
   "devDependencies": {
     "eslint-config-standard": "^4.4.0",
