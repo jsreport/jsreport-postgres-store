@@ -1,9 +1,9 @@
-#jsreport-postgres-store
+# jsreport-postgres-store
 
 **[jsreport](https://github.com/jsreport/jsreport) template store extension allowing to persist data in [PostgreSQL](http://www.postgresql.org/) database**
 
 
-##Installation
+## Installation
 
 > npm install jsreport-postgres-store
 
@@ -23,11 +23,11 @@ Then alter jsreport configuration
 
 After jsreport initializes you should see tables like `jsreport.TemplateType` and other in `jsreport` database.
 
-##Schema changes
+## Schema changes
 If you do changes to the database schema by enabling additional extensions you need to drop the affected tables and let jsreport to reinitialize them. 
 
 
-##jsreport-core
+## jsreport-core
 You can apply this extension also manually to [jsreport-core](https://github.com/jsreport/jsreport-core)
 
 
