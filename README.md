@@ -1,4 +1,6 @@
 # jsreport-postgres-store
+[![NPM Version](http://img.shields.io/npm/v/jsreport-postgres-store.svg?style=flat-square)](https://npmjs.com/package/jsreport-postgres-store)
+[![Build Status](https://travis-ci.org/jsreport/jsreport-postgres-store.png?branch=master)](https://travis-ci.org/jsreport/jsreport-postgres-store)
 
 **[jsreport](https://github.com/jsreport/jsreport) template store extension allowing to persist data in [PostgreSQL](http://www.postgresql.org/) database**
 
