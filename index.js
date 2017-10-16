@@ -7,4 +7,3 @@ module.exports = function (options) {
   config.directory = __dirname
   return config
 }
-
