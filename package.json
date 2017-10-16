@@ -1,6 +1,6 @@
 {
   "name": "jsreport-postgres-store",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Extension allowing to store template in Postgres SQL database",
   "main": "index.js",
   "scripts": {
