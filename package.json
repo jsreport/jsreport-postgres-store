@@ -17,8 +17,7 @@
   "homepage": "https://github.com/jsreport/jsreport-postgres-store#readme",
   "dependencies": {
     "bluebird": "3.5.1",
-    "jsreport-sql-store": "0.1.9",
-    "moment": "2.19.1",
+    "jsreport-sql-store": "0.1.9",   
     "pg-promise": "7.0.3"
   },
   "devDependencies": {
