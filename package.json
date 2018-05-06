@@ -23,5 +23,8 @@
   "devDependencies": {
     "eslint-config-standard": "11.0.0",
     "standard": "11.0.1"
+  },
+  "engines": {
+    "node": ">=8.9"
   }
 }
