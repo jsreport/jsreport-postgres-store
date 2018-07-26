@@ -4,7 +4,8 @@
   "description": "Extension allowing to store template in Postgres SQL database",
   "main": "index.js",
   "scripts": {
-    "test": "standard"
+    "test": "standard",
+    "ltest": "mocha test/test.js --timeout=5000 && standard"
   },
   "repository": {
     "type": "git",
@@ -17,12 +18,21 @@
   "homepage": "https://github.com/jsreport/jsreport-postgres-store#readme",
   "dependencies": {
     "bluebird": "3.5.1",
-    "jsreport-sql-store": "1.1.0",
-    "pg-promise": "8.2.2"
+    "jsreport-sql-store": "1.1.1",
+    "pg-promise": "8.4.5"
   },
   "devDependencies": {
     "eslint-config-standard": "11.0.0",
+    "jsreport-core": "jsreport/jsreport-core",
+    "mocha": "5.2.0",
+    "should": "13.2.1",
     "standard": "11.0.1"
+  },
+  "standard": {
+    "env": {
+      "mocha": 1,
+      "node": 1
+    }
   },
   "engines": {
     "node": ">=8.9"
