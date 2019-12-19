@@ -5,8 +5,8 @@ const jsreport = require('jsreport-core')
 describe('common store tests', () => {
   let reporter
 
-  beforeEach(async () => {
-    reporter = jsreport({
+  async function createReporter () {
+    const instance = jsreport({
       store: { provider: 'postgres' }
     }).use(require('../')({
       'host': 'localhost',
@@ -14,16 +14,24 @@ describe('common store tests', () => {
       'database': 'jsreport',
       'user': 'postgres',
       'password': 'password'
-    }))
+    })).use(() => {
+      jsreport.tests.documentStore().init(() => instance.documentStore)
+    })
 
-    await reporter.init()
+    await instance.init()
 
-    const drop = reporter.documentStore.provider.drop.bind(reporter.documentStore.provider)
+    return instance
+  }
 
-    reporter.documentStore.provider.drop = async () => {
-      await drop()
-      return reporter.documentStore.init()
-    }
+  before(async () => {
+    reporter = await createReporter()
+    await reporter.documentStore.drop()
+    await reporter.close()
+  })
+
+  beforeEach(async () => {
+    reporter = await createReporter()
+    await jsreport.tests.documentStore().clean(() => reporter.documentStore)
   })
 
   afterEach(() => reporter.close())
