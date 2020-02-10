@@ -13,6 +13,7 @@ module.exports = {
       'postgres-store': {
         type: 'object',
         properties: {
+          schemaCreation: { type: 'boolean', default: true },
           host: { type: 'string' },
           port: { type: 'number' },
           database: { type: 'string' },
