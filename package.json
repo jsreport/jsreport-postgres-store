@@ -17,12 +17,12 @@
   "homepage": "https://github.com/jsreport/jsreport-postgres-store#readme",
   "dependencies": {
     "bluebird": "3.5.4",
-    "jsreport-sql-store": "github:jsreport/jsreport-sql-store",
+    "jsreport-sql-store": "1.2.0",
     "pg-promise": "8.5.6"
   },
   "devDependencies": {
     "eslint-config-standard": "11.0.0",
-    "jsreport-core": "github:jsreport/jsreport-core",
+    "jsreport-core": "2.7.0",
     "mocha": "5.2.0",
     "should": "13.2.3",
     "standard": "11.0.1"
