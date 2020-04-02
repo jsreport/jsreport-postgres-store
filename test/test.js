@@ -15,6 +15,16 @@ describe('common store tests', () => {
       'user': 'postgres',
       'password': 'password'
     })).use(() => {
+      instance.documentStore.registerEntityType('InstanceCustomType', {
+        name: { type: 'Edm.String', publicKey: true },
+        score: { type: 'Edm.Decimal' }
+      })
+
+      instance.documentStore.registerEntitySet('testingInstances', {
+        entityType: 'jsreport.InstanceCustomType',
+        splitIntoDirectories: true
+      })
+
       jsreport.tests.documentStore().init(() => instance.documentStore)
     })
 
@@ -37,4 +47,17 @@ describe('common store tests', () => {
   afterEach(() => reporter.close())
 
   jsreport.tests.documentStore()(() => reporter.documentStore)
+
+  it('should correctly parse decimal type from db', async () => {
+    await reporter.documentStore.collection('testingInstances').insert({
+      name: 'test',
+      score: 1.5
+    })
+
+    const entity = await reporter.documentStore.collection('testingInstances').findOne({
+      name: 'test'
+    })
+
+    entity.score.should.be.eql(1.5)
+  })
 })
