@@ -1,3 +1,6 @@
+**⚠️ This repository has been moved to the monorepo [jsreport/jsreport](https://github.com/jsreport/jsreport)**
+--
+
 # jsreport-postgres-store
 [![NPM Version](http://img.shields.io/npm/v/jsreport-postgres-store.svg?style=flat-square)](https://npmjs.com/package/jsreport-postgres-store)
 [![Build Status](https://travis-ci.org/jsreport/jsreport-postgres-store.png?branch=master)](https://travis-ci.org/jsreport/jsreport-postgres-store)
